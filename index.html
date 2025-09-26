@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Benim Sitem</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            color: #2c3e50;
+        }
+
+        p {
+            font-size: 18px;
+            /* Renkli animasyon için ayarlar */
+            background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
+            background-size: 1400% 1400%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: renkDegistir 7s linear infinite;
+            display: inline-block; /* Animasyonun düzgün görünmesi için */
+        }
+
+        .kutu {
+            background-color: #2c3e50; /* DÜZELTİLDİ */
+            padding: 20px;
+            border-radius: 10px;
+            width: 60%;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            color: white; /* Yazılar beyaz olsun */
+        }
+
+        /* Renk animasyonu */
+        @keyframes renkDegistir {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+    </style>
+</head>
+<body>
+    <div class="kutu">
+        <h1>Hoş Geldiniz!</h1>
+        <p>Adım Emirhan Karaca, 9. sınıf öğrencisiyim.</p>
+        <p>Bilişim Teknolojileri dersinde bu siteyi yaptım.</p>
+        <p>- emofulls</p>
+        <p>Hocam öncelikle sakin olun... sitemi beğendiniz mi?</p>
+    </div>
+</body>
+</html>
